@@ -1,0 +1,20 @@
+---
+---
+<p>
+    {{reference}}
+</br>
+<div class="row">
+  <div class="col-md-2">
+    {% if link %}
+    <a href="{{link}}" class="btn btn-default btn-lg">pdf</a>
+    {% endif %}
+    {% if entry.doi %}
+    <a href="http://dx.doi.org/{{entry.doi}} " class="btn btn-default btn-lg">DOI:{{entry.doi}}</a>
+    {% endif %}
+     <button type="button" data-toggle="collapse" data-target="#{{key}}-bibtex"  class="btn btn-default btn-lg">BiBTeX</button>
+    <div id="{{key}}-bibtex" class="collapse">
+       <pre> {{entry.bibtex}}</pre>
+    </div>
+  </div>
+</div>
+</p>
