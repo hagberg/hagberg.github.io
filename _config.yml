@@ -3,6 +3,7 @@ title: aric.hagberg.org
 email: aric.hagberg@gmail.com
 url: https://aric.hagberg.org
 description: "Aric Hagberg.  Mathematics, Algorithms, Software, Hardware"
+baseurl: ''
 
 # Color settings (hex-codes without the leading hash-tag)
 color:
@@ -31,3 +32,27 @@ permalink: pretty
 #safe: true
 #server: true
 #pygments: true
+
+scholar:
+  style: assets/ieee-with-url.csl
+  locale: en
+
+  sort_by: year
+  order: descending
+  group_by: year
+  group_order: descending
+
+  source: .
+  bibliography: papers/aric-hagberg.bib
+  bibliography_template: bib
+  bibliography_list_tag: ul
+
+  details_dir:    bibliography
+  details_layout: bibtex.html
+  details_link:   Details
+
+  replace_strings: true
+
+  repository: papers
+
+  query: "@*"
